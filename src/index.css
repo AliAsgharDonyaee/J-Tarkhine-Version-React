@@ -1,13 +1,111 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "T-Light", "W-Light", sans-serif, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+  font-family: "T-Light";
+  src: local("Estedad-Light"),
+    url("./fonts/ttf/Estedad-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: "W-Light";
+  src: local("Estedad-Light"),
+    url("./fonts/webfonts/statics/Estedad-Medium.woff2") format("woff");
+}
+
+@layer base{
+  /* @media (min-width: 640px) { 
+    @apply grid;
+    @apply grid-cols-4;
+   }
+   @media (min-width: 1440px) {
+    @apply grid;
+    @apply grid-cols-12;
+   } */
+  h1{
+    @apply font-bold;
+    @apply text-[44px];
+  }
+  h2{
+    @apply font-bold;
+    @apply text-[40px];
+  }
+  h3{
+    @apply font-bold;
+    @apply text-[32px];
+  }
+  h4{
+    @apply font-bold;
+    @apply text-[24px];
+  }
+  h5{
+    @apply font-bold;
+    @apply text-[20px];
+  }
+  h6{
+    @apply font-bold;
+    @apply text-[16px];
+  }
+  h7{
+    @apply font-semibold;
+    @apply text-[20px];
+  }
+   .Display1{
+    @apply font-bold;
+    @apply text-[64px];
+   }
+   .Display2{
+    @apply font-bold;
+    @apply text-[56px];
+   }
+   .Boxy-XL{
+    @apply font-base;
+    @apply text-[20px];
+   }
+   .Body-LG{
+    @apply font-base;
+    @apply text-[18px];
+   }
+   .Boxy-MD{
+    @apply font-base;
+    @apply text-[16px];
+   }
+   .Body-SM{
+    @apply font-base;
+    @apply text-[14px];
+   }
+   .Caption-LG{
+    @apply font-bold;
+    @apply text-[14px];
+   }
+   .Caption-MD{
+    @apply font-base;
+    @apply text-[12px];
+   }
+   .Caption-SM{
+    @apply font-bold;
+    @apply text-[10px];
+   }
+   .Button-LG{
+    @apply font-base;
+    @apply text-[16px];
+   }
+   .Button-SM{
+    @apply font-base;
+    @apply text-[14px];
+   }
+   .Overline-LG{
+    @apply font-base;
+    @apply text-[16px];
+   }
+   .Overline-SM{
+    @apply font-bold;
+    @apply text-[12px];
+   }
 }
