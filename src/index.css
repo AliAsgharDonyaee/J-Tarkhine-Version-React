@@ -108,4 +108,8 @@ html,body {
     @apply font-bold;
     @apply text-[12px];
    }
+   .center-items{
+    @apply grid;
+    @apply place-content-center;
+   }
 }

@@ -78,33 +78,7 @@ module.exports = {
 				"contact-cart-shadow":
 					"0px 42px 17px rgba(0, 0, 0, 0.01), 0px 24px 14px rgba(0, 0, 0, 0.05), 0px 11px 11px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);",
 			},
-			typography: (theme) => ({
-				css: {
-					Display1: {
-						
-					}
-				}
-
-
-				// Display1: theme("font-bold", "text-[64px]"),
-				// Display2: theme("font-bold", "text-[56px]"),
-
-				// "Body-XL": theme("font-base", "text-[20px]"),
-				// "Body-LG": theme("font-base", "text-[18px]"),
-				// "Body-MD": theme("font.base", "text.16px"),
-				// "Body-SM": theme("font-base", "text-[14px]"),
-
-				// "Caption-LG": theme("font-bold", "text-[14px]"),
-				// "Caption-MD": theme("font-base", "text-[12px]"),
-				// "Caption-SM": theme("font-bold", "text-[10px]"),
-
-				// "Button-LG": theme("font-base", "text-[16px]"),
-				// "Button-SM": theme("font-base", "text-[14px]"),
-
-				// "Overline-LG": theme("font-base", "text-[16px]"),
-				// "Overline-SM": theme("font-bold", "text-[12px]"),
-			}),
 		},
 	},
-	plugins: [require("@tailwindcss/typography"), require("autoprefixer"), require("postcss")],
+	plugins: [require("autoprefixer"), require("postcss")],
 };
