@@ -112,4 +112,9 @@ html,body {
     @apply grid;
     @apply place-content-center;
    }
+   .center-items-flex{
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+   }
 }

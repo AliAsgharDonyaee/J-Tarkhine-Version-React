@@ -14,6 +14,7 @@ module.exports = {
 		},
 		colors: {
 			// mains color
+			"white":"#fff",
 			"Main-Tint-1": "#E5F2E9",
 			"Main-Tint-2": "#CAE4D3",
 			"Main-Tint-3": "#B0D7BD",
