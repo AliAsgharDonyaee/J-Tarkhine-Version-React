@@ -1,16 +1,18 @@
 import "./App.css";
 import Header from "./layout/Header";
-import { Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import Footer from "./layout/Footer";
+import Routers from "./Routers";
 
 function App() {
+	useEffect(() => {
+		document.title = "به ترخینه خوش آمدید | صفحه اصلی";
+	}, []);
 	return (
 		<div className='App w-full h-full bg-white'>
 			<Header />
-			<Routes>
-				{/* <Route path='/' element={""} /> */}
-				{/* <Route path='/' element={""} /> */}
-				{/* <Route path='*' exact={true} element={""} /> */}
-			</Routes>
+			<Routers />
+			<Footer />
 		</div>
 	);
 }

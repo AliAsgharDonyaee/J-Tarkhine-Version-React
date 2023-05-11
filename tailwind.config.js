@@ -14,7 +14,7 @@ module.exports = {
 		},
 		colors: {
 			// mains color
-			"white":"#fff",
+			white: "#fff",
 			"Main-Tint-1": "#E5F2E9",
 			"Main-Tint-2": "#CAE4D3",
 			"Main-Tint-3": "#B0D7BD",
@@ -52,6 +52,17 @@ module.exports = {
 			"Condition-Warning": "#A9791C",
 			"Condition-Warning-light": "#F4B740",
 			"Condition-Warning-Extralight": "#FFF8E1",
+		},
+		fontSize: {
+			"1x": "0.4em",
+			"1.5x": "0.6em",
+			"2x": "0.8em",
+			"2.5x": "1em",
+			"3x": "1.2em",
+			"4x": "1.6em",
+			"5xl": "2em",
+			"6xl": "2.4em",
+			"7xl": "2.8em",
 		},
 		extend: {
 			spacing: {
