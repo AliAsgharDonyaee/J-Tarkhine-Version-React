@@ -16,19 +16,19 @@ const Category = () => {
 
 	const ColorButton = styled(Button)(({ theme }) => ({
 		color: "#fff",
-		fontWeight: 700,
 		backgroundColor: "#417F56",
 		"&:hover": {
 			backgroundColor: "#417F56",
 		},
+		fontWeight: 700
 	}));
 
 	return (
-		<div className='mt-8x w-full h-auto grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 gap-x-4 gap-y-20'>
+		<div className='my-8x w-full h-auto grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 gap-x-4 gap-y-20'>
 			{category.map(({ img, title }) => (
 				<div className='transition hover:shadow-cart-shadow hover:-translate-y-2 rounded-2x border-2 border-Primary bg-white w-full h-10x lg:h-11x center-items-flex flex-col'>
 					<img src={img} className='-mt-8 md:-mt-5 lg:-mt-8 2xl:-mt-12 w-4/5 2xl:w-3/5' />
-					<ColorButton className='shadow-cart-shadow rounded-1x bg-Primary w-9.5x lg:w-10x'>
+					<ColorButton className='shadow-cart-shadow rounded-1x bg-Primary w-10x Caption-MD'>
 						{title}
 					</ColorButton>
 				</div>

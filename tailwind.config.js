@@ -79,6 +79,16 @@ module.exports = {
 				"9.5x": "100px",
 				"10x": "120px",
 				"11x": "160px",
+				"12x": "180px",
+				"13x": "200px",
+				"14x": "240px",
+				"15x": "280px",
+				"16x": "320px",
+				"17x": "340px",
+				"18x": "360px",
+				"19x": "380px",
+				"20x": "400px",
+				"25x": "500px",
 			},
 			boxShadow: {
 				"drop-shadow-2x": "0px 2px 2px rgba(0, 0, 0, 0.25);",
@@ -91,6 +101,9 @@ module.exports = {
 					"0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09), 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);",
 				"contact-cart-shadow":
 					"0px 42px 17px rgba(0, 0, 0, 0.01), 0px 24px 14px rgba(0, 0, 0, 0.05), 0px 11px 11px rgba(0, 0, 0, 0.09), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);",
+			},
+			backgroundImage: {
+				"Image-1": "url('/src/assets/images/desktop-images/image-1.png')",
 			},
 		},
 	},

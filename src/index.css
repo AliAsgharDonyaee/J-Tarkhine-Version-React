@@ -85,7 +85,6 @@ html,body {
     @apply text-[14px];
    }
    .Caption-MD{
-    @apply font-base;
     @apply text-[12px];
    }
    .Caption-SM{
@@ -93,18 +92,16 @@ html,body {
     @apply text-[10px];
    }
    .Button-LG{
-    @apply font-base;
     @apply text-[16px];
    }
    .Button-SM{
     @apply font-base;
     @apply text-[14px];
    }
-   .Overline-LG{
-    @apply font-base;
+   .Overlye-LG{
     @apply text-[16px];
    }
-   .Overline-SM{
+   .Overlye-SM{
     @apply font-bold;
     @apply text-[12px];
    }
