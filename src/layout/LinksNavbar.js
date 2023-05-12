@@ -17,8 +17,8 @@ const LinksNavbar = ({ links }) => {
 								: "center-items-flex flex-col md:flex-row text-Neutral-Gray-5"
 						}
 					>
-						<Icon className='text-3x md:text-2x xl:text-4x md:ml-1' />
-						<p className='text-2x md:text-[0.7em] lg:text-2x xl:text-2.5x'>{title}</p>
+						<Icon className='text-3x md:text-2x xl:text-3x md:ml-1' />
+						<p className='text-1.5x md:text-[0.7em] lg:text-2x xl:text-2x 2xl:text-2.5x'>{title}</p>
 					</NavLink>
 				))}
 			</div>
