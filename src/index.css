@@ -20,91 +20,93 @@ html,body {
 }
 
 @layer base{
-  /* @media (min-width: 640px) { 
-    @apply grid;
-    @apply grid-cols-4;
-   }
-   @media (min-width: 1440px) {
-    @apply grid;
-    @apply grid-cols-12;
-   } */
-  /* h1{
-    @apply font-bold;
-    @apply text-[44px];
-  }
-  h2{
-    @apply font-bold;
-    @apply text-[40px];
-  }
-  h3{
-    @apply font-bold;
-    @apply text-[32px];
-  }
-  h4{
-    @apply font-bold;
-    @apply text-[24px];
-  }
-  h5{
-    @apply font-bold;
-    @apply text-[20px];
-  }
-  h6{
-    @apply font-bold;
-    @apply text-[16px];
-  }
-  h7{
-    @apply font-semibold;
-    @apply text-[20px];
-  } */
-   .Display1{
-    @apply font-bold;
+  /* Displays */
+   .Display1-B{
     @apply text-[64px];
+    @apply font-bold;
    }
-   .Display2{
+   .Display2-B{
     @apply font-bold;
     @apply text-[56px];
    }
-   .Boxy-XL{
-    @apply font-base;
-    @apply text-[20px];
+   /* 3XL */
+   .Caption-3XL-L{
+    @apply text-[32px];
+   @apply font-light;
+  }
+  .Caption-3XL-M{
+    @apply text-[32px];
+   @apply font-medium;
+  }
+  .Caption-3XL-B{
+    @apply text-[32px];
+   @apply font-bold;
+  }
+   /* 2XL */
+   .Caption-2XL-L{
+     @apply text-[24px];
+    @apply font-light;
    }
-   .Body-LG{
-    @apply font-base;
-    @apply text-[18px];
+   .Caption-2XL-M{
+     @apply text-[24px];
+    @apply font-medium;
    }
-   .Boxy-MD{
-    @apply font-base;
-    @apply text-[16px];
-   }
-   .Body-SM{
-    @apply font-base;
-    @apply text-[14px];
-   }
-   .Caption-LG{
+   .Caption-2XL-B{
+     @apply text-[24px];
     @apply font-bold;
-    @apply text-[14px];
    }
-   .Caption-MD{
+   /* XL */
+   .Caption-XL-L{
+     @apply text-[20px];
+    @apply font-light;
+   }
+   .Caption-XL-M{
+     @apply text-[20px];
+    @apply font-medium;
+   }
+   .Caption-XL-B{
+     @apply text-[20px];
+     @apply font-bold;
+   }
+   /* L */
+   .Caption-L-L{
+     @apply text-[16px];
+    @apply font-light;
+   }
+   .Caption-L-M{
+     @apply text-[16px];
+    @apply font-medium;
+   }
+   .Caption-L-B{
+     @apply text-[16px];
+    @apply font-bold;
+   }
+   /* S */
+   .Caption-S-L{
+     @apply text-[12px];
+     @apply font-light;
+   }
+   .Caption-S-M{
+     @apply text-[12px];
+     @apply font-medium;
+   }
+   .Caption-S-B{
     @apply text-[12px];
-   }
-   .Caption-SM{
     @apply font-bold;
+  }
+  /* XS */
+  .Caption-XS-L{
     @apply text-[10px];
-   }
-   .Button-LG{
-    @apply text-[16px];
-   }
-   .Button-SM{
-    @apply font-base;
-    @apply text-[14px];
-   }
-   .Overlye-LG{
-    @apply text-[16px];
-   }
-   .Overlye-SM{
+    @apply font-light;
+  }
+  .Caption-XS-M{
+    @apply text-[10px];
+    @apply font-medium;
+  }.Caption-XS-B{
+    @apply text-[10px];
     @apply font-bold;
-    @apply text-[12px];
-   }
+  }
+  /* grid , flex */
    .center-items{
     @apply grid;
     @apply place-content-center;

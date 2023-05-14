@@ -52,6 +52,8 @@ module.exports = {
 			"Condition-Warning": "#A9791C",
 			"Condition-Warning-light": "#F4B740",
 			"Condition-Warning-Extralight": "#FFF8E1",
+
+			"inherit": "inherit"
 		},
 		fontSize: {
 			"1x": "0.4em",
@@ -82,6 +84,7 @@ module.exports = {
 				"12x": "180px",
 				"13x": "200px",
 				"14x": "240px",
+				"14.5x": "260px",
 				"15x": "280px",
 				"16x": "320px",
 				"17x": "340px",

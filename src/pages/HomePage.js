@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Category from "../components/components-homepage/Category";
 import ImageCarousell from "../components/components-homepage/ImageCarousell";
 import WideComponents from "../components/WideComponents";
@@ -15,12 +14,12 @@ const HomePage = () => {
 		{ title: "منوی متنوع", Icon: FiBookOpen },
 	]);
 	return (
-		<section className='mb-24 w-full h-auto'>
+		<section className='w-full h-auto'>
 			<div className='w-full h-auto'>
 				<ImageCarousell />
 			</div>
 			<WideComponents>
-				<h1 className='mt-2x lg:mt-4x text-3x xl:text-4x font-bold text-Neutral-Gray-8 text-center'>
+				<h1 className='mt-2x lg:mt-4x Caption-XL-B 2xl:Caption-2XL-B font-bold text-Neutral-Gray-8 text-center'>
 					منوی رستوران ترخینه
 				</h1>
 				<Category />
@@ -29,7 +28,7 @@ const HomePage = () => {
 				<AboutRestorant p={p} />
 			</div>
 			<WideComponents>
-				<h1 className='mt-2x lg:mt-4x text-3x xl:text-4x font-bold text-Neutral-Gray-8 text-center'>
+				<h1 className='mt-2x lg:mt-4x Caption-XL-B 2xl:Caption-2XL-B font-bold text-Neutral-Gray-8 text-center'>
 					ترخینه گردی
 				</h1>
 				<CategoryAboutTarkhine />

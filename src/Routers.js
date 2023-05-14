@@ -13,13 +13,22 @@ import RulesPage from "./pages/RulesPage";
 import SearchPage from "./pages/SearchPage";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
+import MainFoodPage from "./pages/menu-foods/MainFoodPage";
+import AppetizerFoodPage from "./pages/menu-foods/AppetizerFoodPage";
+import DessertFoodPage from "./pages/menu-foods/DessertFoodPage";
+import BeveragesFoodPage from "./pages/menu-foods/BeveragesFoodPage";
 
 const Routers = () => {
 	return (
 		<Routes>
 			<Route path='/' element={<HomePage />} />
 			<Route path='/branch' element={<BranchPage />} />
-			<Route path='/menu' element={<MenuPage />} />
+			<Route path='/menu' element={<MenuPage />}>
+				<Route path='/menu/main-foods' element={<MainFoodPage />} />
+				<Route path='/menu/main-appetizer' element={<AppetizerFoodPage />} />
+				<Route path='/menu/main-dessert' element={<DessertFoodPage />} />
+				<Route path='/menu/main-beverages' element={<BeveragesFoodPage />} />
+			</Route>
 			<Route path='/deputize' element={<DeputizePage />} />
 			<Route path='/about-us' element={<AboutPage />} />
 			<Route path='/contact-us' element={<ContactPage />} />

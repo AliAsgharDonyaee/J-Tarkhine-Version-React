@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import Button from "@mui/material/Button";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Paper from "@mui/material/Paper";
 import Image1 from "../../assets/images/desktop-images/image-1.png";
 import Image2 from "../../assets/images/desktop-images/image-2.png";
 import Image3 from "../../assets/images/desktop-images/image-3.png";
 import Image4 from "../../assets/images/desktop-images/image-4.png";
-import styled from "@emotion/styled";
-import { fontWeight } from "@mui/system";
+import { ColorButton } from "../ColorButton";
+import { useNavigate } from "react-router-dom";
 
 const ImageCarousell = () => {
 	const [items, setItems] = useState([
 		{
 			name: "تجربه غذای سالم و گیاهی به سبک ترخینه",
-			img: Image2,
+			img: Image1,
 		},
 		{
 			name: "تجربه غذای سالم و گیاهی به سبک ترخینه",
@@ -29,17 +28,7 @@ const ImageCarousell = () => {
 			img: Image4,
 		},
 	]);
-
-	const ColorButton = styled(Button)(({ theme }) => ({
-		color: "#fff",
-		backgroundColor: "#417F56",
-		"&:hover": {
-			backgroundColor: "#417F56",
-		},
-		fontSize: "0.9em",
-		fontWeight: 700,
-	}));
-
+	const navigate = useNavigate();
 	return (
 		<Carousel
 			animation='slide'
@@ -55,8 +44,14 @@ const ImageCarousell = () => {
 						className='w-full h-14x md:h-16x lg:h-17x xl:h-20x 2xl:h-25x bg-cover bg-no-repeat center-items-flex flex-col'
 						style={{ backgroundImage: `url('${img}')` }}
 					>
-						<h2 className='mb-4 text-white text-3x xl:text-5x font-bold'>{name}</h2>
-						<ColorButton className='shadow-cart-shadow rounded-1x bg-Primary w-11x'>
+						<h2 className='mb-4 text-white Caption-L-B md:Caption-XL-B lg:Caption-2XL-B 2xl:Caption-3XL-B font-bold'>
+							{name}
+						</h2>
+						<ColorButton
+							onClick={() => navigate("/menu/main-foods")}
+							className='shadow-cart-shadow rounded-1x bg-Primary w-8x'
+							style={{ width: "10rem" }}
+						>
 							سفارش آنلاین غذا
 						</ColorButton>
 					</div>
