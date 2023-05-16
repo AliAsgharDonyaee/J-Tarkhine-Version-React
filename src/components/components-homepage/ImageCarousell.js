@@ -47,13 +47,14 @@ const ImageCarousell = () => {
 						<h2 className='mb-4 text-white Caption-L-B md:Caption-XL-B lg:Caption-2XL-B 2xl:Caption-3XL-B font-bold'>
 							{name}
 						</h2>
-						<ColorButton
-							onClick={() => navigate("/menu/main-foods")}
-							className='shadow-cart-shadow rounded-1x bg-Primary w-8x'
-							style={{ width: "10rem" }}
-						>
-							سفارش آنلاین غذا
-						</ColorButton>
+						<div className="w-2/5 md:w-1/5 lg:w-[15%] 2xl:w-[10%] h-5x 2xl:h-6x">
+							<ColorButton
+								onClick={() => navigate("/menu/foods")}
+								className='shadow-cart-shadow rounded-1x bg-Primary w-full h-full'
+							>
+								سفارش آنلاین غذا
+							</ColorButton>
+						</div>
 					</div>
 				</Paper>
 			))}

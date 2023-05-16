@@ -10,7 +10,7 @@ const Header = () => {
 	const [links, setLinks] = useState([
 		{ title: "صفحه اصلی", link: "/", Icon: FiHome },
 		{ title: "شعبه ها", link: "/branch", Icon: FiGitBranch },
-		{ title: "منو", link: "/menu", Icon: FiMenu },
+		{ title: "منو", link: "/menu/foods", Icon: FiMenu },
 		{ title: "اعطای نمایندگی", link: "/deputize", Icon: RiLuggageDepositLine },
 		{ title: "درباره ما", link: "/about-us", Icon: FiUsers },
 		{ title: "تماس با ما", link: "/contact-us", Icon: FiPhoneCall },

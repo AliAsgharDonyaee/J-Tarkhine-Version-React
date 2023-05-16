@@ -24,10 +24,10 @@ const Routers = () => {
 			<Route path='/' element={<HomePage />} />
 			<Route path='/branch' element={<BranchPage />} />
 			<Route path='/menu' element={<MenuPage />}>
-				<Route path='/menu/main-foods' element={<MainFoodPage />} />
-				<Route path='/menu/main-appetizer' element={<AppetizerFoodPage />} />
-				<Route path='/menu/main-dessert' element={<DessertFoodPage />} />
-				<Route path='/menu/main-beverages' element={<BeveragesFoodPage />} />
+				<Route path='/menu/foods'  element={<MainFoodPage />} />
+				<Route path='/menu/appetizer' element={<AppetizerFoodPage />} />
+				<Route path='/menu/dessert' element={<DessertFoodPage />} />
+				<Route path='/menu/beverages' element={<BeveragesFoodPage />} />
 			</Route>
 			<Route path='/deputize' element={<DeputizePage />} />
 			<Route path='/about-us' element={<AboutPage />} />

@@ -11,6 +11,7 @@ module.exports = {
 			"4x": "24px",
 			"5x": "32px",
 			"6x": "64px",
+			full: "100%",
 		},
 		colors: {
 			// mains color
@@ -53,7 +54,7 @@ module.exports = {
 			"Condition-Warning-light": "#F4B740",
 			"Condition-Warning-Extralight": "#FFF8E1",
 
-			"inherit": "inherit"
+			inherit: "inherit",
 		},
 		fontSize: {
 			"1x": "0.4em",

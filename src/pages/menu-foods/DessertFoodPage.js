@@ -8,7 +8,7 @@ const DessertFoodPage = () => {
 	return (
 		<WideComponents>
 			<div className='mt-2 mb-4 flex justify-between items-end'>
-				<h2 className='Caption-XL-B text-Neutral-Gray-8'>غذاهای ایرانی</h2>
+				<h2 className='Caption-XL-B text-Neutral-Gray-8'> دسر ها</h2>
 				<Button className='rounded-2x px-2 w-10x h-5x text-Primary border-2 border-Primary flex flex-row-reverse justify-between items-center'>
 					<p>تکمیل خرید</p>
 					<FiShoppingCart />
