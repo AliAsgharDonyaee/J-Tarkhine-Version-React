@@ -36,7 +36,9 @@ const MenuPage = () => {
 					<CategoryList categoryList={categoryList} />
 				</WideComponents>
 			</div>
-			<Outlet />
+			<div className="w-full h-auto">
+				<Outlet />
+			</div>
 		</section>
 	);
 };

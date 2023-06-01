@@ -14,7 +14,7 @@ const BeveragesFoodPage = () => {
 		</Button>
 	</div>
 	<div className='mb-8 w-full h-auto flex flex-col md:flex-row gap-4'>
-		<Foods data='' />
+	<p>not data</p>
 	</div>
 </WideComponents>
 };

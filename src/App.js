@@ -1,32 +1,29 @@
 import "./App.css";
 import Header from "./layout/Header";
-import { useEffect } from "react";
 import Footer from "./layout/Footer";
 import Routers from "./Routers";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
-	useEffect(() => {
-		document.title = "به ترخینه خوش آمدید | صفحه اصلی";
-	}, []);
+const AppWrapper = () => {
 	return (
-		<div className='App w-full h-full bg-white flex flex-col justify-between min-h-screen'>
+		<Provider store={store}>
+			<App />
+		</Provider>
+	);
+};
+
+export const App = () => {
+	return (
+		<div className='App'>
+			<ToastContainer />
 			<Header />
 			<Routers />
 			<Footer />
 		</div>
 	);
+};
 
-	// {
-	// 	!data ? (
-	// 		<div className='w-sreen h-screen bg-white'>loading ...</div>
-	// 	) : (
-	// 		<div className='App w-full h-full bg-white'>
-	// 			<Header />
-	// 			<Routers />
-	// 			<Footer />
-	// 		</div>
-	// 	);
-	// }
-}
-
-export default App;
+export default AppWrapper;

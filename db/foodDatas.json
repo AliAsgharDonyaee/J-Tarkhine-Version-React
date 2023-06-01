@@ -1,0 +1,340 @@
+{
+    "iranian-foods":[
+        {
+            "name": "کوفنه برنجی",
+            "discription": "برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز",
+            "price": 180000,
+            "Img": "../src/assets/images/food-images/iranian-food/kofte.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 35
+            }
+        },
+        {
+            "name": "کشک بادمجان",
+            "discription": "بادمجان، کشک، نعناع خشک، مغز گردو، سیر، پیاز",
+            "price": 95000,
+            "img": "../src/assets/images/food-images/iranian-food/kashke-bademjan.png",
+            "star": 5,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "میرزا قاسمی",
+            "discription": "بادمجان، گوجه فرنگی، تخم مرغ، سیر، رب گوجه فرنگی",
+            "price": 165000,
+            "img": "../src/assets/images/food-images/iranian-food/mirza-gasemi.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 10
+            }
+        },
+        {
+            "name": "باقلاقاتوق",
+            "discription": "پاچ باقلا، شوید خشک، کره، سیر، تخم مرغ",
+            "price": 205000,
+            "img": "../src/assets/images/food-images/iranian-food/baglagatog.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 10
+            }
+        },
+        {
+            "name": "فلافل",
+            "discription": "نخود، پیاز، تخم گشنیز، سیر، جعفری، سیب زمینی",
+            "price": 80000,
+            "img": "../src/assets/images/food-images/iranian-food/falafel.png",
+            "star": 3,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "کله جوش",
+            "discription": "کشک، گردو، پیاز، نعناع خشک",
+            "price": 210000,
+            "img": "../src/assets/images/food-images/iranian-food/kalejosh.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 5
+            }
+        },
+        {
+            "name": "بورانی بادمجان",
+            "discription": "بادمجان قلمی، ماست چکیده، سیر، روغن زیتون، مغز گردو",
+            "price": 170000,
+            "img": "../src/assets/images/food-images/iranian-food/borani-bademjan.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 22
+            }
+        },
+        {
+            "name": "بادمجان شکم‌پر",
+            "discription": "بادمجان، پیاز، گوجه فرنگی، سبزی خشک",
+            "price": 150000,
+            "img": "../src/assets/images/food-images/iranian-food/bademjan-shekam-por.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 18
+            }
+        },
+        {
+            "name": "دلمه برگ کلم",
+            "discription": "کلم برگ، برنج، لپه پخته، پیاز، سبزی معطر",
+            "price": 220000,
+            "img": "../src/assets/images/food-images/iranian-food/dolme-kalam.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 8
+            }
+        },
+        {
+            "name": "دلمه برگ مو",
+            "discription": "پیاز، برنج، لپه، سبزی دلمه، سرکه",
+            "price": 190000,
+            "img": "../src/assets/images/food-images/iranian-food/dolme.png",
+            "star": 2,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "کوکو سبزی",
+            "discription": "تخم مرغ، گردو، سیر، آرد، روغن مایع سبزی کوکویی",
+            "price": 300000,
+            "img": "../src/assets/images/food-images/iranian-food/koko-sabzi.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 10
+            }
+        },
+        {
+            "name": "کوکو سیب‌زمینی و عدس",
+            "discription": "عدس، سیب زمینی، پیاز متوسط، تخم مرغ، پودر سیر، آرد سوخاری",
+            "price": 135000,
+            "img": "../src/assets/images/food-images/iranian-food/dolme.png",
+            "star": 1,
+            "off":{
+                "condition": true,
+                "off": 20
+            }
+        }
+    ],
+    "non-iranina-foods":[
+        {
+            "name": "پاستا سبزیجات",
+            "discription": "پاستا، قارچ، گوجه، کدوی خوردشده، پیاز خلالی‌شده",
+            "price": 175000,
+            "img": "../src/assets/images/food-images/non-iranian-food/pasta-vejetable.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 20
+            }
+        },
+        {
+            "name": "پاستا بلونز",
+            "discription": "اسپاگتی، گوشت چرخ کرده، هویج، ساقه کرفس، گوجه فرنگی، سیر، پیاز، پنیر پارمزان، روغن زیتون",
+            "price": 170000,
+            "img": "../src/assets/images/food-images/non-iranian-food/pasta-blonze.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 12
+            }
+        },
+        {
+            "name": "راتاتویی",
+            "discription": "بادمجان، گوجه فرنگی، کدو سبز، پیاز، رب گوجه فرنگی، روغن زیتون، پنیر پارمزان",
+            "price": 180000,
+            "img": "../src/assets/images/food-images/non-iranian-food/ratatoi.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 45
+            }
+        },
+        {
+            "name": "سوشی",
+            "discription": "جلبک دریایی/ نوری، برنج کته، سرکه سفید (یا سرکه برنج)، شکر، نمک دریا",
+            "price": 100000,
+            "img": "../src/assets/images/food-images/non-iranian-food/soshi.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 15
+            }
+        },
+        {
+            "name": "پالاک پنیر ",
+            "discription": "پنیر، اسفناج، گوجه، پیاز، سیر ",
+            "price": 200000,
+            "img": "../src/assets/images/food-images/non-iranian-food/palag-panir.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 15
+            }
+        },
+        {
+            "name": "کالزونه اسفناج ",
+            "discription": "اسفناج، قارچ، پنیر موزارلا یا پنیر پیتزا، پنیر ریکوتا یا پنیر خامه ای، پیاز، سیر، روغن زیتون ",
+            "price": 190000,
+            "img": "../src/assets/images/food-images/non-iranian-food/kalzone.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 17
+            }
+        }
+    ],
+    "pizzas":[
+        {
+            "name": "پیتزا روکولا",
+            "discription": "اسفناج، سبزی روکولا، آرد، پودر مایه خمیر، روغن زیتون، خردل، سیر، پنیر موزارلا و پارمسان، گوجه گیلاسی ،سس فلفل سبز تند ",
+            "price": 195000,
+            "img": "../src/assets/images/food-images/pizza/rokola.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 12
+            }
+        },
+        {
+            "name": "پیتزا بادمجان و زیتون",
+            "discription": "بادمجان کوچک، روغن زیتون، پنیر موزارلا، پنیر پارمزان، برگ ریحان، گوجه فرنگی، سس گوجه فرنگی",
+            "price": 150000,
+            "img": "../src/assets/images/food-images/pizza/bademjan-ziton.png",
+            "star": 4,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "پیتزا سبزیجات و خامه",
+            "discription": "نخود فرنگی پخته شده، ذرت نیم پز، فلفل دلمه‌ای رنگی، قارچ، سیر یا پیازچه خردشده",
+            "price": 210000,
+            "img": "../src/assets/images/food-images/pizza/sabzichat-khame.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 21
+            }
+        },
+        {
+            "name": "پیتزا قارچ",
+            "discription": "قارچ، فلفل دلمه ای، رب گوجه فرنگی، پودر سیر، آویشن، مرزه، پنیر پیتزا گیاهی",
+            "price": 215000,
+            "img": "../src/assets/images/food-images/pizza/sabzichat-khame.png",
+            "star": 3,
+            "off":{
+                "condition": true,
+                "off": 25
+            }
+        },
+        {
+            "name": "پیتزا پپرونی",
+            "discription": "تافو، فلفل قرمز خشک شده، پودر دانه‌های خردل، دانه رازیانه، پاپریکا دودی، پودر سیر، شکر نارگیل، پودر بادیان رومی ",
+            "price": 100000,
+            "img": "../src/assets/images/food-images/pizza/peperoni.png",
+            "star": 4,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "پیتزا اسفناج",
+            "discription": "اسفناج تازه، پیاز، سیر، پنیر پیتزا، قارچ",
+            "price": 280000,
+            "img": "../src/assets/images/food-images/pizza/esfenaj.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 10
+            }
+        },
+        {
+            "name": "پیتزا مارگاریتا",
+            "discription": "گوجه فرنگی، ریحان، سیر، پنیر پیتزا",
+            "price": 165000,
+            "img": "../src/assets/images/food-images/pizza/margarita.png",
+            "star": 2,
+            "off":{
+                "condition": true,
+                "off": 13
+            }
+        },
+        {
+            "name": "پیتزا پنیر",
+            "discription": "نان پیتزا، پنیر پیتزا، سس باربیکیو، گوجه فرنگی، سس کچاپ، سیر، روغن زیتون",
+            "price": 115000,
+            "img": "../src/assets/images/food-images/pizza/panir.png",
+            "star": 3,
+            "off":{
+                "condition": true,
+                "off": 16
+            }
+        }
+    ],
+    "sandwitch":[
+        {
+            "name": "ساندویچ کتلت مخصوص",
+            "discription": "سیب زمینی، لوبیا قرمز،  بلغور گندم، نعناع خشک، پودر زیره، پودر جوز هندی، گوجه فرنگی، روغن زیتون",
+            "price": 230000,
+            "img": "../src/assets/images/food-images/sandwich/kotlet-makhsos.png",
+            "star": 5,
+            "off":{
+                "condition": true,
+                "off": 18
+            }
+        },
+        {
+            "name": "ساندویچ سوسیس کوکتل",
+            "discription": "سوسیس گیاهی، پیاز، سیب زمینی،  رب گوجه فرنگی",
+            "price": 205000,
+            "img": "../src/assets/images/food-images/sandwich/sosis-esfenaj.png",
+            "star": 4,
+            "off":{
+                "condition": true,
+                "off": 35
+            }
+        },
+        {
+            "name": "ساندویچ کتلت کدو سبز",
+            "discription": "کدو سبز، هویج، سیب زمینی، پیاز",
+            "price": 145000,
+            "img": "../src/assets/images/food-images/sandwich/kotlet-kadosabz.png",
+            "star": 5,
+            "off":{
+                "condition": false,
+                "off": 0
+            }
+        },
+        {
+            "name": "پنینی اسفناج",
+            "discription": " قارچ، اسفناج، پیاز، پنیر پیتزا، خامه، پودر پاپریکا، گردو، سرکه بالزامیک، سس مایونز",
+            "price": 210000,
+            "img": "../src/assets/images/food-images/sandwich/esfenaj.png",
+            "star": 3,
+            "off":{
+                "condition": true,
+                "off": 15
+            }
+        }
+    ]
+}

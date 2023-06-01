@@ -6,8 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import convertOff from "../../utils/convertOff";
 import foramtNumber from "../../utils/formatNumber";
 
-const Foods = ({ data }) => {
-	return data?.length === 0 ? (
+const NonIraninaFoods = ({ data }) => {
+	return data.length === 0 ? (
 		<>
 			<div>... loading </div>
 			<ToastContainer />
@@ -65,4 +65,4 @@ const Foods = ({ data }) => {
 	);
 };
 
-export default Foods;
+export default NonIraninaFoods;
