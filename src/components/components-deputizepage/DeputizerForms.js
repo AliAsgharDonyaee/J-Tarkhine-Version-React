@@ -70,7 +70,7 @@ const DeputizerForms = () => {
 			<div className='mb-4 w-full h-auto md:flex gap-x-2'>
 				<div className='w-full md:w-1/2 h-5x Caption-S-M flex justify-between items-center text-Neutral-Gray-8 md:grid grid-cols-2 grid-rows-2'>
 					<label className='md:mt-4'>
-						<input type='checkbox' className='accent-Primary' checked />
+						<input type='checkbox' className='accent-Primary' />
 						<span className='mr-1'>پروانه کسب دارد</span>
 					</label>
 					<label className='md:mt-4'>

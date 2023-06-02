@@ -17,6 +17,7 @@ import MainFoodPage from "./pages/menu-foods/MainFoodPage";
 import AppetizerFoodPage from "./pages/menu-foods/AppetizerFoodPage";
 import DessertFoodPage from "./pages/menu-foods/DessertFoodPage";
 import BeveragesFoodPage from "./pages/menu-foods/BeveragesFoodPage";
+import Other from "./pages/Other";
 
 const Routers = () => {
 	return (
@@ -24,7 +25,7 @@ const Routers = () => {
 			<Route path='/' element={<HomePage />} />
 			<Route path='/branch' element={<BranchPage />} />
 			<Route path='/menu' element={<MenuPage />}>
-				<Route path='/menu/foods'  element={<MainFoodPage />} />
+				<Route path='/menu/foods' element={<MainFoodPage />} />
 				<Route path='/menu/appetizer' element={<AppetizerFoodPage />} />
 				<Route path='/menu/dessert' element={<DessertFoodPage />} />
 				<Route path='/menu/beverages' element={<BeveragesFoodPage />} />
@@ -35,9 +36,11 @@ const Routers = () => {
 			<Route path='/cart' element={<CartPage />} />
 			<Route path='/profile' element={<ProfilePage />} />
 			<Route path='/search' element={<SearchPage />} />
-			<Route path='/asked-questions' element={<AskedQuestionsPage />} />
-			<Route path='/rules' element={<RulesPage />} />
-			<Route path='/privacy' element={<PrivacyPage />} />
+			<Route path='/other' element={<Other />}>
+				<Route path='/other/asked-questions' element={<AskedQuestionsPage />} />
+				<Route path='/other/rules' element={<RulesPage />} />
+				<Route path='/other/privacy' element={<PrivacyPage />} />
+			</Route>
 			<Route path='*' exact={true} element={<PageNotFound />} />
 		</Routes>
 	);

@@ -39,7 +39,7 @@ const Header = () => {
 				<nav className='-ml-2 md:-ml-4 lg:m-0 w-1/2 md:w-[15%] lg:w-1/4 xl:w-1/5 h-full flex-row flex justify-end md:justify-evenly lg:justify-end items-center'>
 					<NavLinks navLink={navLink} />
 				</nav>
-				<nav className='fixed md:hidden bottom-0 left-0 bg-white rounded-t-2x w-full h-16 z-50'>
+				<nav className='fixed md:hidden bottom-0 left-0 bg-white border-t-2 border-Neutral-Gray-5 w-full h-16 z-50'>
 					<LinksNavbar links={links} />
 				</nav>
 			</nav>

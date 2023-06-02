@@ -2,10 +2,7 @@ import { FETCH_REQUEST, FETCH_FAILURE, FETCH_SUCCESS } from "./productTypes";
 
 const initialstate = {
 	loading: false,
-	datasMainFood: [],
-	datasSecondaryFoods: [],
-	datasSan: [],
-	datasPiz: [],
+	datas: [],
 	error: "",
 	products: [],
 };

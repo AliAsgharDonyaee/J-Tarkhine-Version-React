@@ -5,35 +5,21 @@ import { FiShoppingCart } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Foods from "../../components/components-menupage/Foods";
-import NonIraninaFoods from "../../components/components-menupage/NonIraninaFoods";
 import WideComponents from "../../components/WideComponents";
 import { fetchFailure, fetchRequest, fetchSuccess } from "../../redux/productActions";
 
 const MainFoodPage = () => {
-	const { datasMainFood, datasSecondaryFoods, datasSan, datasPiz } = useSelector((state) => state);
+	const datas = useSelector((state) => state.data);
 	const dispatch = useDispatch();
-	const url = window.location.pathname;
 
 	useEffect(() => {
 		dispatch(fetchRequest());
-		// axios
-		// 	.get(
-		// 		`http://localhost:3100/${
-		// 			url === "/menu/foods"
-		// 				? "iranian-foods"
-		// 				: url === "/menu/appetizer"
-		// 				? "non-iranina-foods"
-		// 				: url === "/menu/dessert"
-		// 				? "pizzas"
-		// 				: url === "/menu/beverages"
-		// 				? "sandwitch"
-		// 				: ""
-		// 		}`,
-		// 	)
-			.then((datas) => datas && dispatch(fetchSuccess(datas.data)))
+		axios
+			.get("http://localhost:3100/products")
+			.then((datas) => datas && dispatch(fetchSuccess(datas?.data[0])))
 			.catch((error) => {
 				dispatch(fetchFailure(error.message));
-				toast.error(`${error.message}, run json-server`, {
+				toast.error(`${error.message}, please run json-server :)`, {
 					position: "top-right",
 					autoClose: 5000,
 					hideProgressBar: false,
@@ -57,26 +43,26 @@ const MainFoodPage = () => {
 						</Button>
 					</div>
 					<div className='mb-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-4'>
-						<Foods data={datasMainFood} />
+						<Foods data={datas?.iranianFoods} />
 					</div>
-					{/* <div className='mt-2 mb-4 flex justify-between items-end'>
+					<div className='mt-2 mb-4 flex justify-between items-end'>
 						<h2 className='Caption-XL-B text-Neutral-Gray-8'>غذاهای غیر ایرانی</h2>
 					</div>
 					<div className='mb-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-4'>
-						<NonIraninaFoods data={datasSecondaryFoods} />
+						<Foods data={datas?.nonIraninaFoods} />
 					</div>
 					<div className='mt-2 mb-4 flex justify-between items-end'>
 						<h2 className='Caption-XL-B text-Neutral-Gray-8'>ساندویچ ها</h2>
 					</div>
 					<div className='mb-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-4'>
-						<NonIraninaFoods data={datasSan} />
+						<Foods data={datas?.sandwitch} />
 					</div>
 					<div className='mt-2 mb-4 flex justify-between items-end'>
 						<h2 className='Caption-XL-B text-Neutral-Gray-8'>پیتزا ها</h2>
 					</div>
 					<div className='mb-8 w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-4'>
-						<NonIraninaFoods data={datasPiz} />
-					</div> */}
+						<Foods data={datas?.pizzas} />
+					</div>
 				</div>
 			</WideComponents>
 		</>

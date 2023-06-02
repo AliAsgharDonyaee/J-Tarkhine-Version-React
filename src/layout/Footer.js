@@ -6,18 +6,27 @@ import packageInfo from "../../package.json";
 
 const Footer = () => {
 	return (
-		<footer className='rounded-t-3x mb-28 md:m-0 w-full h-13x lg:h-14x 2xl:h-16x bg-Neutral-Gray-8'>
+		<footer className='rounded-t-3x mb-24 md:m-0 w-full h-13x lg:h-14x 2xl:h-16x bg-Neutral-Gray-8'>
 			<div className='mx-auto py-4 lg:py-8 w-[95%] xl:w-[1024px] 2xl:w-[1440px] h-full grid grid-cols-2 md:grid-cols-4 grid-rows-1'>
 				<div className='w-full h-full flex flex-col'>
 					<h2 className='Caption-XL-B 2xl:Caption-2XL-B mb-4 text-white'>دسترسی آسان</h2>
 					<div className='flex flex-col text-white'>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/other/asked-questions'
+							className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'
+						>
 							پرسش‌های متداول
 						</Link>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/other/rules'
+							className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'
+						>
 							قوانین ترخینه
 						</Link>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/other/privacy'
+							className='Caption-S-M 2xl:Caption-S-B mb-2 transition hover:text-Neutral-Gray-5'
+						>
 							حریم خصوصی
 						</Link>
 					</div>
@@ -36,16 +45,28 @@ const Footer = () => {
 				<div className='w-full h-full flex flex-col'>
 					<h2 className='Caption-XL-B 2xl:Caption-2XL-B mb-4 text-white'>شعبه‌های ترخینه</h2>
 					<div className='flex flex-col text-white'>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/contact-us'
+							className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'
+						>
 							شعبه اکباتان
 						</Link>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/contact-us'
+							className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'
+						>
 							شعبه چالوس
 						</Link>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/contact-us'
+							className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'
+						>
 							شعبه اقدسیه
 						</Link>
-						<Link to='' className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'>
+						<Link
+							to='/contact-us'
+							className='Caption-S-M 2xl:Caption-S-B my-1 transition hover:text-Neutral-Gray-5'
+						>
 							شعبه ونک
 						</Link>
 					</div>
