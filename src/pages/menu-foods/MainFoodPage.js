@@ -19,7 +19,7 @@ const MainFoodPage = () => {
 			.then((datas) => datas && dispatch(fetchSuccess(datas?.data[0])))
 			.catch((error) => {
 				dispatch(fetchFailure(error.message));
-				toast.error(`${error.message}, please run json-server :)`, {
+				toast.error(`${error.message}, please run json-servers :)`, {
 					position: "top-right",
 					autoClose: 5000,
 					hideProgressBar: false,

@@ -1,5 +1,3 @@
-import "react-modern-calendar-datepicker/lib/DatePicker.css";
-import DatePicker from "react-modern-calendar-datepicker";
 import { ColorButton } from "../ColorButton";
 const CounselingForm = () => {
 	return (
@@ -15,8 +13,7 @@ const CounselingForm = () => {
 				className='rounded-2x border-2 border-Neutral-Gray-3 px-1 w-full md:w-1/4 h-5x Caption-S-L'
 			/>
 			<div className='w-full md:w-1/2 h-5x flex justify-between lg:justify-start items-center gap-x-2'>
-				<DatePicker />
-				<div className="w-full lg:w-2/5 h-auto">
+				<div className='w-full lg:w-2/5 h-auto'>
 					<ColorButton>درخواست مشاوره</ColorButton>
 				</div>
 			</div>

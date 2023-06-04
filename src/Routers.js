@@ -6,7 +6,7 @@ import MenuPage from "./pages/MenuPage";
 import DeputizePage from "./pages/DeputizePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import PageNotFound from "./pages/PageNotFound";
+import NotFoundPage from "./pages/NotFoundPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import AskedQuestionsPage from "./pages/AskedQuestionsPage";
 import RulesPage from "./pages/RulesPage";
@@ -41,7 +41,7 @@ const Routers = () => {
 				<Route path='/other/rules' element={<RulesPage />} />
 				<Route path='/other/privacy' element={<PrivacyPage />} />
 			</Route>
-			<Route path='*' exact={true} element={<PageNotFound />} />
+			<Route path='*' exact={true} element={<NotFoundPage />} />
 		</Routes>
 	);
 };

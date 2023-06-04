@@ -100,7 +100,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='py-2 w-full bg-Neutral-Gray-8 border-t-2 border-Neutral-Gray-7 text-center text-Neutral-Gray-5 Caption-S-B md:caption-M-B'>
-				made by &#10084;(love)&#10084; in codawin - v {packageInfo.version}
+				made by &#10084; in codawin (https://github.com/AliasgharDevF) - v {packageInfo.version}
 			</div>
 		</footer>
 	);

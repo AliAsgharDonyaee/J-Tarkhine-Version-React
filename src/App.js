@@ -6,6 +6,10 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Loginpage from "./pages/Loginpage";
+import Signuppage from "./pages/Signuppage";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const AppWrapper = () => {
 	return (
@@ -16,12 +20,26 @@ const AppWrapper = () => {
 };
 
 export const App = () => {
+	const location = useLocation();
+
 	return (
 		<div className='App'>
-			<ToastContainer />
-			<Header />
-			<Routers />
-			<Footer />
+			{location.pathname === "/signup" ||
+			location.pathname === "/login" ||
+			location.pathname === "/forgot-password" ? (
+				<Routes>
+					<Route path='/login' element={<Loginpage />} />
+					<Route path='/signup' element={<Signuppage />} />
+					<Route path='/forgot-password' element={<ForgotPassword />} />
+				</Routes>
+			) : (
+				<>
+					<ToastContainer />
+					<Header />
+					<Routers />
+					<Footer />
+				</>
+			)}
 		</div>
 	);
 };
