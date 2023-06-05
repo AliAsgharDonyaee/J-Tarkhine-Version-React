@@ -10,11 +10,19 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Loginpage from "./pages/Loginpage";
 import Signuppage from "./pages/Signuppage";
 import ForgotPassword from "./pages/ForgotPassword";
+import { AuthProvider } from "react-auth-kit";
 
 const AppWrapper = () => {
 	return (
 		<Provider store={store}>
-			<App />
+			<AuthProvider
+				authType={"cookie"}
+				authName={"_auth"}
+				cookieDomain={window.location.hostname}
+				cookieSecure={false}
+			>
+				<App />
+			</AuthProvider>
 		</Provider>
 	);
 };

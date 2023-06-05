@@ -40,7 +40,7 @@ const Signuppage = () => {
 	const navigate = useNavigate();
 	const handleSubmit = async (datas) => {
 		await axios
-			.get("http://localhost:3200/users")
+			.get("http://localhost:3200/signup")
 			.then((res) => {
 				let resultDataBase = res.data.some((i) => i.datas.email == datas.email);
 				if (resultDataBase) {
@@ -56,8 +56,8 @@ const Signuppage = () => {
 					});
 				} else {
 					axios
-						.post("http://localhost:3200/users", {
-							id: new Date().toISOString(),
+						.post("http://localhost:3200/signup", {
+							token: new Date().getMilliseconds(),
 							enterTime: new Date().toISOString(),
 							datas,
 							products: {},

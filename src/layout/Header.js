@@ -18,7 +18,7 @@ const Header = () => {
 	const [navLink, setNavLink] = useState([
 		{ link: "/search", Icon: FiSearch },
 		{ link: "/cart", Icon: FiShoppingCart },
-		{ link: "/login", Icon: FiUser },
+		{ link: "/profile/user", Icon: FiUser },
 	]);
 
 	return (

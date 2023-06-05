@@ -5,6 +5,7 @@ import { ColorButton } from "../components/ColorButton";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
+import { useSignIn } from "react-auth-kit";
 
 const RegisterValidation = object().shape({
 	email: string().required("لطفا ایمیل خود را وارد کنید").email("فرمت ایمیل شما اشتباه است"),
@@ -32,27 +33,45 @@ const Input = ({ name, label, ...props }) => {
 
 const LoginPage = () => {
 	const navigate = useNavigate();
+	const signIn = useSignIn();
 	const handleSubmit = async (datas) => {
 		await axios
-			.get("http://localhost:3200/users")
-			.then((res) => {
-				let resultDataBase = res.data.some(
+			.get("http://localhost:3200/signup")
+			.then((resp) => {
+				let resultDataBase = resp.data.some(
 					(i) => i.datas.email == datas.email && i.datas.password == datas.password,
 				);
 				if (resultDataBase) {
-					toast.success(`عزیز با موفقیت وارد حساب کاربری خود شدید  ${res.data[0].datas.fullName}`, {
-						position: "top-right",
-						autoClose: 5000,
-						hideProgressBar: false,
-						closeOnClick: true,
-						pauseOnHover: true,
-						draggable: true,
-						progress: undefined,
-						theme: "colored",
-					});
-					setInterval(() => {
-						navigate("/");
-					}, 3000);
+					axios
+						.post("http://localhost:3200/login", {
+							fullName: resp.data[0]?.datas.fullName,
+							token: resp.data[0].token,
+							enterTime: resp.data[0].enterTime,
+							email: resp.data[0]?.datas?.email,
+							password: resp.data[0]?.datas?.password,
+							products: {},
+						})
+						.then((res) => {
+							signIn({
+								token: res.data.token,
+								expiresIn: 3600,
+								tokenType: "Bearer",
+								authState: [res.data.fullName, res.data.email],
+							});
+							toast.success(`عزیز با موفقیت وارد حساب کاربری خود شدید  ${res.data?.email}`, {
+								position: "top-right",
+								autoClose: 5000,
+								hideProgressBar: false,
+								closeOnClick: true,
+								pauseOnHover: true,
+								draggable: true,
+								progress: undefined,
+								theme: "colored",
+							});
+							setInterval(() => {
+								navigate("/profile");
+							}, 3000);
+						});
 				} else {
 					toast.error(`ایمیل یا پسورد اشتباه است`, {
 						position: "top-right",

@@ -1,5 +1,27 @@
 {
-  "users": [
-
+  "signup": [
+    {
+      "token": 768,
+      "enterTime": "2023-06-05T09:33:29.768Z",
+      "datas": {
+        "fullName": "ali asgahr",
+        "email": "alidonyaee64@gmail.com",
+        "password": "Ali772359",
+        "confirmPassword": "Ali772359"
+      },
+      "products": {},
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "fullName": "ali asgahr",
+      "token": 768,
+      "enterTime": "2023-06-05T09:33:29.768Z",
+      "email": "alidonyaee64@gmail.com",
+      "password": "Ali772359",
+      "products": {},
+      "id": 1
+    }
   ]
 }
