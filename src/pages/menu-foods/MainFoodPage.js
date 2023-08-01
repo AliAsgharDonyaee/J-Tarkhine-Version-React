@@ -15,7 +15,7 @@ const MainFoodPage = () => {
 	useEffect(() => {
 		dispatch(fetchRequest());
 		axios
-			.get("http://localhost:3100/products")
+			.get("https://z-apis.vercel.app/api/products")
 			.then((datas) => datas && dispatch(fetchSuccess(datas?.data[0])))
 			.catch((error) => {
 				dispatch(fetchFailure(error.message));
